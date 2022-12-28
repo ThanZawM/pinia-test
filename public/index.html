@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- external css file error! it doesn't work! -->
+    <link href="../src/assets/main.css" rel="stylesheet" type="text/html" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body {
+        background: #f2f2f2;
+        color: #444;
+        margin: 0;
+      }
+      header {
+        text-align: center;
+        background: #e7e7e7;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header img {
+        max-width: 60px;
+        transform: rotate(-10deg);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2em;
+        padding-top: 25px;
+        margin-left: 15px;
+        color: #777;
+        transform: rotate(2deg);
+      }
+    </style>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
